@@ -4,6 +4,7 @@ Site estático para publicação no GitHub e implantação no EasyPanel.
 
 - `/` abre a página principal (`index.html`).
 - `/fire.html` abre o tutorial Fire TV.
+- Endereços que não existem exibem `404.html` mantendo o status HTTP 404.
 
 ## EasyPanel
 
