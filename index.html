@@ -455,7 +455,7 @@
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 390px));
       justify-content: center;
       gap: 20px
     }
@@ -479,6 +479,60 @@
     .card.featured-plan {
       border-color: rgba(198, 255, 77, .5);
       box-shadow: 0 0 45px rgba(152, 205, 47, .08)
+    }
+
+    .card.test-plan {
+      background: linear-gradient(150deg, rgba(56, 41, 87, .96), rgba(21, 19, 36, .98));
+      border-color: rgba(177, 140, 255, .5);
+      box-shadow: inset 0 1px rgba(220, 205, 255, .08)
+    }
+
+    .card.test-plan:hover {
+      border-color: #b18cff;
+      box-shadow: 0 22px 65px #0005, 0 0 32px rgba(156, 114, 255, .14)
+    }
+
+    .test-plan .plan-icon {
+      color: #c5aaff;
+      background: rgba(156, 114, 255, .13);
+      border-color: rgba(177, 140, 255, .24)
+    }
+
+    .test-plan .check {
+      color: #c5aaff;
+      background: rgba(156, 114, 255, .15)
+    }
+
+    .test-plan .btn {
+      color: #e0d3ff;
+      border-color: rgba(177, 140, 255, .42)
+    }
+
+    .card.activation-plan {
+      background: linear-gradient(150deg, rgba(25, 61, 68, .92), rgba(14, 25, 33, .98));
+      border-color: rgba(91, 210, 202, .45);
+      box-shadow: inset 0 1px rgba(196, 255, 251, .07)
+    }
+
+    .card.activation-plan:hover {
+      border-color: #63d8d0;
+      box-shadow: 0 22px 65px #0005, 0 0 32px rgba(91, 210, 202, .12)
+    }
+
+    .activation-plan .plan-icon {
+      color: #76e4dc;
+      background: rgba(91, 210, 202, .12);
+      border-color: rgba(91, 210, 202, .24)
+    }
+
+    .activation-plan .check {
+      color: #76e4dc;
+      background: rgba(91, 210, 202, .14)
+    }
+
+    .activation-plan .btn {
+      color: #b9f4ef;
+      border-color: rgba(91, 210, 202, .4)
     }
 
     .badge {
@@ -880,7 +934,7 @@
     <a class="brand" href="#inicio" aria-label="OGeek início"><span
         class="brand-mark">G</span><span>O<span>Geek</span></span></a>
     <nav class="nav-links" aria-label="Navegação principal"><a href="#planos">Planos</a><a
-        href="#vantagens">Vantagens</a><a href="#perguntas-frequentes">Perguntas frequentes</a><a href="#contato">Atendimento</a></nav>
+        href="#vantagens">Vantagens</a><a href="#perguntas-frequentes">Perguntas frequentes</a><a href="fire.html">Tutorial Fire TV</a><a href="#contato">Atendimento</a></nav>
     <a class="nav-cta" href="#planos">Ver planos <span aria-hidden="true">↗</span></a>
   </header>
   <main>
@@ -958,6 +1012,24 @@
           <p>Comece quando quiser e escolha a duração que combina com você.</p>
         </div>
         <div class="cards">
+          <article class="card test-plan">
+            <div class="plan-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 7v5l3 2" />
+              </svg></div>
+            <h3>Plano de Teste</h3>
+            <div class="sub">Conheça a experiência OGeek</div>
+            <div class="price"><span class="amount">3</span><span class="period">horas</span></div>
+            <p class="fine">Duração do acesso de teste</p>
+            <div class="divider"></div>
+            <ul class="features">
+              <li><span class="check">✓</span> Acesso de teste por 3 horas</li>
+              <li><span class="check">✓</span> Solicite pelo WhatsApp</li>
+            </ul><a class="btn btn-ghost"
+              href="https://wa.me/5511983392304?text=Ol%C3%A1!%20Quero%20solicitar%20um%20teste%20de%203%20horas%20da%20OGeek."
+              target="_blank" rel="noopener noreferrer">Quero testar <span>→</span></a>
+          </article>
           <article class="card">
             <div class="plan-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="1.8">
@@ -1004,7 +1076,7 @@
               href="https://wa.me/5511983392304?text=Ol%C3%A1!%20Quero%20o%20plano%20trimestral%20da%20OGeek%20(R%24%2090%2Ftrimestre)."
               target="_blank" rel="noopener noreferrer">Quero esse plano <span>→</span></a>
           </article>
-          <article class="card">
+          <article class="card activation-plan">
             <div class="plan-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="1.8">
                 <rect x="5" y="2" width="14" height="20" rx="3" />
